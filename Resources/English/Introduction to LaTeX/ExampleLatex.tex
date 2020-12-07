@@ -1,0 +1,30 @@
+\documentclass[10pt]{article}%YOU ALWAYS START WITH DOCUMENT CLASS. The square brackets detail the relative size of the typesetting in the general document, what's within the key brackets is the type of document you will make. It can be either a book, article (the one you will probably use), or even report. Those a re the main ones. 
+\usepackage[utf8]{inputenc}%just like coding libraries, \usepackage allows you to inport certain macros and sets of macros that allow, for example the utf one allows TeX to recognize 8 bit unicode characters (so it can recognize all characters from most languages). Or AMSSYMB which allows you to use advanced math symbols. There's also TIKZ, and USEGRAPHICX that allow you to create images and import images respectively. 
+\usepackage{amssymb}
+ 
+\title{BASIC LATEX Document}
+\author{Jorge Mario Laveaga Vergara}
+\date{04/12/2020}
+
+\begin{document}
+	\maketitle %Macro that makes a title page with the \title, \author & \date defined above.
+	\section{A section}
+		\subsection{A subsection within the first section}
+		{You don't have to write within keys, but it's a good way to structure the code of your latex document}\par %tells latex to end a paragraph
+	\section{New section stops old section}
+		\subsection{New subsection within new section}
+		{Math is written with two \$ signs with the mathe matics in between. Also one usually puts the math in an "equation" that doesn't need the \$ signs, or within a center and spaces it out with two backslashes. You can also put the \$ symbols in most places like here: $x^2$}\par
+		\begin{equation}
+			equation
+		\end{equation}
+		{or}\par
+		\begin{center}
+			$equation$
+			\\
+			$equation$
+		\end{center}
+		{You can also create italics and bold text with: \textit{textit} and \textbf{textbf}.}\par 
+		{Also in math you usually utilize $\{$ and $\}$ as your standar parenthesis that allow you to write $x^{y+1}$ properly.. To usually denote a symbol that has another purpose literally, you usually put a backslash in front of it.}\par 
+	
+\end{document}
+
